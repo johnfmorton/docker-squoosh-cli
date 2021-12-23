@@ -1,5 +1,5 @@
 # Docker Squoosh
-This repo contains a Dockerfike for [Squoosh CLI](https://github.com/GoogleChromeLabs/squoosh/tree/dev/cli). You can find a respository of this image on Docker Hub at [johnfmorton/squoosh](https://hub.docker.com/repository/docker/johnfmorton/squoosh).
+This repo contains a Dockerfile for [Squoosh CLI](https://github.com/GoogleChromeLabs/squoosh/tree/dev/cli). You can find a respository of this image on Docker Hub at [johnfmorton/squoosh](https://hub.docker.com/repository/docker/johnfmorton/squoosh).
 
 ## Description
 
@@ -33,7 +33,7 @@ Alternatively, you can pass in the `squoosh-cli` command along with
 docker run --rm -it -v `pwd`:/app johnfmorton/squoosh squoosh-cli --webp auto --optimizer-butteraugli-target 1.4 *.png
 ```
 
-## Using alias
+## Using an alias
 
 If you don't want to type that long docker command, use the method descriped in [Dock Life: Using Docker for All The Things!](https://nystudio107.com/blog/dock-life-using-docker-for-all-the-things).
 
@@ -47,6 +47,14 @@ Then to use the command line version of Squoosh CLI, I do not need to have anyth
 
 ```
 squoosh-cli --webp auto --optimizer-butteraugli-target 1.4 *.png
+```
+
+## Windows users
+
+I don't have a windows machine to test on, but I think you'll need to update the alias to use `"${CURDIR}"` as shown here.
+
+```
+alias squoosh-cli='docker run --rm -it -v "${CURDIR}":/app johnfmorton/squoosh squoosh-cli'
 ```
 
 ## Future possible additions
