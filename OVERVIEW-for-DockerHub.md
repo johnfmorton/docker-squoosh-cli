@@ -1,5 +1,5 @@
 # Docker Squoosh
-This repo contains a Dockerfike for [Squoosh CLI](https://github.com/GoogleChromeLabs/squoosh/tree/dev/cli). You can find a repository of this image on Docker Hub at [johnfmorton/squoosh](https://hub.docker.com/repository/docker/johnfmorton/squoosh).
+This repo contains a Dockerfike for [Squoosh CLI](https://github.com/GoogleChromeLabs/squoosh/tree/dev/cli). You can find a repository of this image on GitHub at [johnfmorton/docker-squoosh-cli](https://github.com/johnfmorton/docker-squoosh-cli).
 
 ## Description
 
